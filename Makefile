@@ -3,15 +3,15 @@
 all: ebpf kernel user
 
 ebpf:
-$(MAKE) -C ebpf
+	$(MAKE) -C ebpf
 
 kernel:
-$(MAKE) -C kernel
+	$(MAKE) -C kernel
 
 user:
-$(MAKE) -C user
+	$(MAKE) -C user
 
 clean:
-$(MAKE) -C ebpf clean
-$(MAKE) -C kernel clean
-$(MAKE) -C user clean
+	$(MAKE) -C ebpf clean
+	$(MAKE) -C kernel clean
+	$(MAKE) -C user clean
